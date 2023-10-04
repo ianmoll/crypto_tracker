@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Crypto Tracker</title>
+</head>
+<body>
+   <div class="container ">
+    <div class="row justify-content-center" style="margin-top: 116px;">
+        <h1 class="col-md-7 text-center">Crypto Tracker</h1>
+        <h4 class="col-md-7 text-center">By Gammaprep.com</h4>
+       <div class="col-md-6 justify-content-center ">
+        <div class="col-10">
+            <form action=" " id="searchForm">
+                <div class="form-row">
+                    <div class="col-12 form-group" style="margin-left: 42px;">
+                     <label for="xyz"><b>Coin Type :</b></label>
+                     <select name="coinType" id="xyz" class="form-control mt-2 border-voilet " >
+                        <option style="background-color: #000; color: #fff; border-color: #000;" value="btc-usd">Bitcoin-USD</option>
+                        <option style="background-color: #000; color: #fff; border-color: #000;" value="doge-usd">Dogcoin-USD</option>
+                        <option style="background-color: #000; color: #fff; border-color: #000;" value="eth-usd">Etherum-USD</option>
+                        <option style="background-color: #000; color: #fff; border-color: #000;" value="btc-doge">Bitcoin- Dogecoin</option>
+                        <option style="background-color: #000; color: #fff; border-color: #000;" value="bnb-usd">Binance-USD</option>
+                    </select>
+                    </div>
+                </div>
+               
+                <button type="submit" class="col-12 btn btn-dark mt-2" style="margin-left: 42px;">Get Price</button>
+            </form>
+        </div>
+       
+       </div>
+       <div class="col-md-7 text-center row justify-content-center">
+        <table class="col-md-7 m-4 table table-dark table-hover table-striped-columns border-light-subtle table-bordered" border="1px" id="tableResult" style="width: 0%; border-radius: 12px; margin-left: 35px;">
+          
+            
+        </table>
+       </div>
+    </div>
+   
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+   <script src="app.js"></script>
+</body>
+</html>
